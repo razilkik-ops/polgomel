@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Сухопрессованная стяжка в Гомеле под ключ</title>
+  <meta name="description" content="Сухопрессованная (полусухая) стяжка пола в Гомеле и области. Прозрачная смета, фиксируем цену в договоре, выполняем за 1 день на большинстве объектов." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Unbounded:wght@500;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__row">
+      <a href="#top" class="brand">СТЯЖКА<span>ГОМЕЛЬ</span></a>
+      <nav class="nav">
+        <a href="#calc">Калькулятор</a>
+        <a href="#process">Как работаем</a>
+        <a href="#price">Цены</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <a class="btn btn--small" href="tel:+375290000000">+375 (29) 000-00-00</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal">
+      <div class="container hero__inner">
+        <p class="eyebrow">Гомель и область • договор • гарантия 5 лет</p>
+        <h1>Сухопрессованная стяжка в Гомеле</h1>
+        <p class="hero__lead">Делаем ровное основание под плитку, ламинат и кварцвинил. Считаем смету до старта, привозим материалы, подаем смесь механизированно и оставляем поверхность готовой к финишной отделке.</p>
+        <div class="hero__cta">
+          <a class="btn" href="#calc">Рассчитать стоимость</a>
+          <a class="btn btn--ghost" href="tel:+375290000000">Позвонить мастеру</a>
+        </div>
+        <div class="hero__proof">
+          <span>Цена от 22 BYN/м²</span>
+          <span>До 200 м² за смену</span>
+          <span>Ходить можно через 12-24 часа</span>
+        </div>
+      </div>
+      <div class="container hero__metrics" aria-label="Ключевые показатели">
+        <article><strong>200 м²</strong><span>за рабочую смену</span></article>
+        <article><strong>0 BYN</strong><span>доплат без согласования</span></article>
+        <article><strong>5 лет</strong><span>гарантия на работы</span></article>
+      </div>
+    </section>
+
+    <section class="container cards reveal">
+      <article class="card">
+        <div class="card__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="card__icon">
+            <path d="M7 3h8l4 4v14H5V3h2zm8 1.5V8h3.5" />
+            <path d="M8 12h8M8 16h6" />
+          </svg>
+        </div>
+        <h3>Прозрачная смета</h3>
+        <p>Сразу считаем материалы, подъем, демпферную ленту, пленку и затирку. Без «всплывших» доплат в финале.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="card__icon">
+            <circle cx="12" cy="12" r="8" />
+            <path d="M12 4v16M4 12h16" />
+          </svg>
+        </div>
+        <h3>Точный уровень</h3>
+        <p>Работаем с лазерным нивелиром, фиброволокном и финишной шлифовкой, чтобы финишное покрытие легло без переделок.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon-wrap" aria-hidden="true">
+          <svg viewBox="0 0 24 24" class="card__icon">
+            <path d="M3 10l9-6 9 6v10H3V10z" />
+            <path d="M9 20v-6h6v6" />
+          </svg>
+        </div>
+        <h3>Под любой объект</h3>
+        <p>Квартиры, дома, гаражи, коммерция и теплый пол. Подбираем толщину и состав под нагрузку.</p>
+      </article>
+    </section>
+
+    <section id="calc" class="container calc reveal">
+      <div class="calc__intro">
+        <p class="eyebrow">Онлайн-калькулятор</p>
+        <h2>Оцените бюджет за 30 секунд</h2>
+        <p>Это ориентир до замера. Финальную цену фиксируем в договоре после осмотра объекта.</p>
+      </div>
+      <form class="calc__form" id="calcForm">
+        <label>Площадь, м²
+          <input type="number" id="area" min="10" value="55" required />
+        </label>
+        <label>Толщина слоя
+          <select id="thickness">
+            <option value="50">50 мм</option>
+            <option value="60" selected>60 мм</option>
+            <option value="70">70 мм</option>
+            <option value="80">80 мм</option>
+          </select>
+        </label>
+        <label>Тип объекта
+          <select id="objectType">
+            <option value="flat" selected>Квартира</option>
+            <option value="house">Частный дом</option>
+            <option value="commercial">Коммерция / склад</option>
+            <option value="garage">Гараж</option>
+          </select>
+        </label>
+        <label>Этаж
+          <select id="floor">
+            <option value="1">1-2 этаж</option>
+            <option value="2" selected>3-5 этаж</option>
+            <option value="3">6+ этаж</option>
+          </select>
+        </label>
+        <label class="check"><input type="checkbox" id="warmFloor" /> Стяжка по теплому полу</label>
+        <label class="check"><input type="checkbox" id="demolition" /> Нужен демонтаж старого пола</label>
+      </form>
+      <aside class="calc__result" aria-live="polite">
+        <p>Ориентировочная стоимость:</p>
+        <strong id="estimate">1 760 BYN</strong>
+        <span id="rate">32 BYN/м²</span>
+        <ul>
+          <li>Замер и консультация в Гомеле</li>
+          <li>Подготовка основания и укрытие</li>
+          <li>Механизированная подача и затирка</li>
+        </ul>
+        <a class="btn" href="tel:+375290000000">Заказать бесплатный замер</a>
+      </aside>
+    </section>
+
+    <section id="process" class="container process reveal">
+      <p class="eyebrow">Как проходит работа</p>
+      <h2>6 шагов до готового основания</h2>
+      <div class="process__grid">
+        <article><span>01</span><h3>Замер и нивелировка</h3><p>Проверяем перепады, считаем толщину слоя и фиксируем смету.</p></article>
+        <article><span>02</span><h3>Подготовка основания</h3><p>Пленка, демпферная лента, при необходимости шумоизоляция и утепление.</p></article>
+        <article><span>03</span><h3>Подача смеси</h3><p>Пневмонагнетатель подает смесь в нужную зону без лишней грязи в подъезде.</p></article>
+        <article><span>04</span><h3>Выставление маяков</h3><p>Лазерный контроль уровня на каждом участке, чтобы не ловить перепады.</p></article>
+        <article><span>05</span><h3>Затирка машиной</h3><p>Финишная поверхность под укладку напольных покрытий.</p></article>
+        <article><span>06</span><h3>Приемка и рекомендации</h3><p>Передаем объект, объясняем режим ухода в первые дни.</p></article>
+      </div>
+    </section>
+
+    <section id="price" class="container price reveal">
+      <p class="eyebrow">Ориентиры по цене</p>
+      <h2>Стоимость зависит от площади, толщины и условий подъема</h2>
+      <div class="price__table">
+        <article>
+          <h3>Квартира</h3>
+          <p>от 28 BYN/м²</p>
+          <span>Площадь от 40 м², слой 50-60 мм</span>
+        </article>
+        <article>
+          <h3>Частный дом</h3>
+          <p>от 24 BYN/м²</p>
+          <span>Площадь от 80 м², стабильная геометрия</span>
+        </article>
+        <article>
+          <h3>Коммерция</h3>
+          <p>от 22 BYN/м²</p>
+          <span>Объем от 120 м², расчет по техзаданию</span>
+        </article>
+      </div>
+      <p class="price__note">Минимальная стоимость выезда бригады: 650 BYN.</p>
+    </section>
+
+    <section class="container trust reveal">
+      <div class="trust__intro">
+        <p class="eyebrow">Почему выбирают нас</p>
+        <h2>Делаем стяжку так, чтобы вам не пришлось переделывать пол через год</h2>
+        <p>Здесь нет громких обещаний без деталей. Мы закрываем главный риск заказчика: скрытые доплаты, неясные сроки и слабый контроль качества на объекте.</p>
+        <div class="trust__proof">
+          <span>Договор + смета до старта</span>
+          <span>Фото и видео каждого этапа</span>
+        </div>
+      </div>
+      <div class="trust__list">
+        <article class="trust__item">
+          <span class="trust__tag">01</span>
+          <h3>Фиксируем стоимость заранее</h3>
+          <p>Цена не меняется в процессе без вашего согласования. Все позиции согласуем до начала работ.</p>
+        </article>
+        <article class="trust__item">
+          <span class="trust__tag">02</span>
+          <h3>Работаем по договору</h3>
+          <p>В договоре фиксируем объем, сроки и гарантийные обязательства, чтобы не было разночтений.</p>
+        </article>
+        <article class="trust__item">
+          <span class="trust__tag">03</span>
+          <h3>Показываем, что происходит на объекте</h3>
+          <p>Отправляем фото и видео этапов, даже если вы не можете приехать лично в день работ.</p>
+        </article>
+        <article class="trust__item">
+          <span class="trust__tag">04</span>
+          <h3>Даем понятные сроки по финишному покрытию</h3>
+          <p>Объясняем, когда безопасно укладывать ламинат, плитку или кварцвинил без риска переделок.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="container faq reveal">
+      <div class="faq__intro">
+        <p class="eyebrow">FAQ</p>
+        <h2>Частые вопросы по стяжке в Гомеле</h2>
+        <p>Собрали ключевые моменты, которые чаще всего спрашивают перед замером и стартом работ.</p>
+        <div class="faq__chips">
+          <span>Ответ за 1 звонок</span>
+          <span>Технически по делу</span>
+        </div>
+      </div>
+      <div class="faq__list">
+        <details class="faq__item" open>
+          <summary>
+            <span class="faq__num">01</span>
+            <span>Через сколько можно ходить и укладывать покрытие?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <p>По поверхности обычно можно ходить через 12-24 часа. Срок укладки финишного покрытия зависит от влажности основания и типа материала.</p>
+        </details>
+        <details class="faq__item">
+          <summary>
+            <span class="faq__num">02</span>
+            <span>Подходит ли под теплый водяной пол?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <p>Да, выполняем стяжку по контурам теплого пола с корректной толщиной и составом смеси под рабочие нагрузки.</p>
+        </details>
+        <details class="faq__item">
+          <summary>
+            <span class="faq__num">03</span>
+            <span>Что нужно от меня на объекте?</span>
+            <span class="faq__icon" aria-hidden="true"></span>
+          </summary>
+          <p>Нужны доступ в помещение, вода и электричество 220В. Остальную организацию и расходники берем на себя.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta reveal">
+      <div class="container">
+        <div>
+          <h2>Нужен точный расчет по вашему объекту в Гомеле?</h2>
+          <p>Оставьте заявку, и мастер перезвонит, чтобы уточнить площадь, толщину и удобное время замера.</p>
+        </div>
+        <div class="hero__cta">
+          <a class="btn" href="tel:+375290000000">Позвонить сейчас</a>
+          <a class="btn btn--ghost" href="mailto:info@styazhka-gomel.by">Написать на почту</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__row">
+      <p>© 2026 СтяжкаГомель. Сухопрессованная стяжка пола.</p>
+      <p>Гомель и Гомельская область</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
