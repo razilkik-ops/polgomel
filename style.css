@@ -798,6 +798,24 @@ h3 {
   font-size: 0.92rem;
 }
 
+.footer__row p,
+.footer__contacts p {
+  margin: 0;
+}
+
+.footer__contacts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 10px 16px;
+}
+
+.footer__contacts a {
+  color: var(--lime);
+  font-weight: 800;
+  text-decoration: none;
+}
+
 .modal-open {
   overflow: hidden;
 }
@@ -1041,6 +1059,10 @@ h3 {
   .hero__cta {
     width: 100%;
     padding-inline: 8px;
+  }
+
+  .footer__contacts {
+    justify-content: flex-start;
   }
 
   .video-modal__close {
