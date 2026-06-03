@@ -32,6 +32,13 @@ const WORK_ONLY_ITEMS = [
   'финишная шлифовка стяжки пола',
   'рекомендации по уходу за стяжкой',
 ];
+const DEFAULT_AREA_BY_OBJECT_TYPE = {
+  flat: 55,
+  house: 30,
+  roof: 55,
+  garage: 20,
+};
+let previousObjectType = objectTypeEl.value;
 
 function formatByn(value) {
   return new Intl.NumberFormat('ru-RU').format(Math.round(value)) + ' BYN';
@@ -123,6 +130,22 @@ function calculate() {
   renderResultList('В стоимость входят:', MATERIALS_INCLUDED_ITEMS);
   calcNoteEl.textContent = `Стоимость может корректироваться по расстоянию после уточнения адреса.${distanceText}`;
 }
+
+areaEl.addEventListener('input', () => {
+  areaEl.dataset.touched = 'true';
+});
+
+objectTypeEl.addEventListener('change', () => {
+  const currentArea = Number(areaEl.value);
+  const previousDefaultArea = DEFAULT_AREA_BY_OBJECT_TYPE[previousObjectType];
+
+  if (!areaEl.dataset.touched || currentArea === previousDefaultArea) {
+    areaEl.value = DEFAULT_AREA_BY_OBJECT_TYPE[objectTypeEl.value];
+  }
+
+  previousObjectType = objectTypeEl.value;
+  calculate();
+});
 
 form.addEventListener('input', calculate);
 calculate();
